@@ -77,6 +77,41 @@ h3 {
   height: 56px;
 }
 
+/* search styling */
+.searchBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+/*
+.searchBox input {
+  border-radius: 0.125rem 0 0 0.125rem;
+  border-bottom-width: 0;
+  border: 1px solid rgb(102, 102, 102);
+}
+
+.searchBox button {
+  border: 1px solid rgb(102, 102, 102);
+  border-top-width: 0;
+  border-radius: 0 0.125rem 0.125rem 0;
+}
+*/
+.searchBox input {
+  margin-left: 3px;
+}
+
+.searchBox button {
+  margin-top: 5px;
+  border: 0;
+  background-color: white;
+}
+
+.searchBox img {
+  width: 20px;
+  background-color: #fd9b08;
+}
+
 /* tiles styling */
 .tiles {
   display: flex;
