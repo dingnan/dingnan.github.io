@@ -1,49 +1,118 @@
 /* Reset some default browser styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Basic styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
+.mongol {
+  text-orientation: sideways-right;
+  writing-mode: vertical-lr;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+.mt5 {
+  margin-top: 5px;
 }
 
-nav {
-    background-color: #444;
-    padding: 10px;
+.pl5 {
+  padding-left: 5px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+h2 {
+  font-size: 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+h3 {
+  font-size: 16px;
 }
 
-main {
-    padding: 20px;
+.horizontal {
+  transform: rotate(-90deg);
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/* header styling */
+.header {
+  display: flex;
+  flex-direction: column;
+  background: #0047be;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.toplink {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-height: 900px;
+  min-height: 750px;
+}
+
+.column {
+  flex: 0 0 auto;
+}
+
+.column:nth-child(1) {
+  width: 80px;
+}
+
+.column:nth-child(2) {
+  flex: 0 0 30%;
+}
+
+.column:nth-child(3) {
+  flex: 0 0 60%;
+}
+
+.column:nth-child(4) {
+  flex: 1;
+}
+
+.logo {
+  height: 56px;
+}
+
+/* tiles styling */
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tiles a {
+  text-decoration: none;
+}
+
+.tiles img {
+  width: 60px;
+}
+.tiles .count {
+  text-align: center;
+}
+
+.tiles article {
+  display: flex;
+  flex-grow: row;
+  border: 1px solid #ccd7ea;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 3px;
+}
+
+.tiles .desc {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+/* blog styling */
+.blog {
+  display: flex;
+}
+
+.blog .date {
+  text-align: right;
 }
